@@ -1,0 +1,20 @@
+<view class="searchContainer">
+	<view class="searchIcon">
+		<icon type='search' />
+	</view>
+	<input bindinput="getsuggest" value="{{backfill}}" placeholder='请输入地址' placeholder-class="WHSearchPlaceholder" class="WHSearch" />
+</view>
+
+<map class="map" longitude="{{longitude}}" latitude="{{latitude}}" markers="{{markers}}"></map>
+
+<view class="addrTxtBox">
+		<view wx:for="{{suggestion}}" wx:key="index">
+			<view bindtap="addressConfirm" data-index="{{index}}" class="addrBox">
+				<view class="imgNtitle">
+					<image src="minilandmark.png" class="minilandmark"></image>
+					<view bindtap="backfill" id="{{index}}" class="title">{{item.title}}</view>
+				</view>
+				<view class="addrDetail">{{item.address}}</view>
+			</view>
+		</view>
+</view>

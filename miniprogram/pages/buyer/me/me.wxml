@@ -1,0 +1,22 @@
+<view class="auth">
+	<button class="authSon" wx:if='{{!auth}}' bindtap="auth" open-type="getUserInfo">授权登录</button>
+	<!-- <view class="authSon" bindtap="auth" wx:if='{{}}'>授权登陆</view> -->
+	<image wx:if='{{auth}}' src="{{authInfo.avatarUrl}}" class="avatar"/>
+	<view wx:if='{{auth}}' class="nickName">{{authInfo.nickName}}</view>
+</view>
+
+<view class="ctr">
+	<view class="item" bindtap="mRent">
+		<image src='his.png' class="img1" />
+		<view class="itemSon">我的出租</view>
+	</view>
+
+	<view class="item BN" bindtap="about">
+		<image src="about.png" class="img1"></image>
+		<view class="itemSon">关于我们</view>
+	</view>
+</view>
+
+<image src="cloud://ozh-aesrx.6f7a-ozh-aesrx-1259680962/warehouse/other/微信图片_20200214184723.jpg" class="img2"></image>
+
+<view style="height:100rpx"></view>

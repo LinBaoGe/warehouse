@@ -1,0 +1,50 @@
+<view class='sNcCtr'>
+	<view class="sNcItem">
+		<view class="srchIcon">
+			<icon type='search' />
+		</view>
+		<input class="srchInput" placeholder='您要租哪里的仓库？' placeholder-class="WHSrchPH" bindconfirm="bConfirm" confirm-type="search"/>
+	</view>
+</view>
+
+<view class="ttlBox">
+	<view class="ttlItem {{item.color?'cFecc2c':''}}" bindtap="one" wx:for='{{ttlList}}' wx:key='x' data-index="{{index}}">
+		<view class="ttlName">{{item.name}}</view>
+		<image src="downGrey.png" class="DBArrow" wx:if='{{!item.up}}'/>
+		<image src="upOrange.png" class="DBArrow" wx:if='{{item.up}}'/>
+	</view>
+</view>
+
+<view class="table slidown" wx:if='{{ttlList[oIndex].up}}'>
+		<view wx:for='{{ttlList[oIndex].list}}' wx:key='x' bindtap="two" data-index="{{index}}" 
+		class="tableItem {{item.color?'cFecc2c':''}}">{{item.name}}</view>
+</view>
+
+<view class='sMask' wx:if='{{sMask}}' bindtap="sMask" />
+
+<!-- 详情列表 -->
+<view class="WHCtr">
+	<view wx:for='{{filterArray}}' wx:key='x' class="WHItem" bindtap="WHItem" data-index="{{index}}">
+		<view class="imgBox">
+			<image src='{{item.img}}' class="img" mode="aspectFill" />
+		</view>
+		<view class="txtInfo">
+			<view class="WHTitle">{{item.userTitle}}</view>
+			<view class="distance">距离{{item.afterDistance}}{{item.unit}}</view>
+			<view class="areaNprice">
+				<view class="area">{{item.area}}㎡</view>
+				<view class="height">高{{item.height}}米</view>
+				<view class="price">{{item.unitPrice}}元/㎡</view>
+			</view>
+		</view>
+	</view>
+</view>
+
+<view class="sellIconBox" bindtap="addWH">
+	<image src='rent.png' class="sellIcon" />
+	<view class="sellIconTxt">我要出租</view>
+</view>
+
+
+
+<view style="height:200rpx"></view>

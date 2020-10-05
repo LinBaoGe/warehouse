@@ -1,0 +1,78 @@
+<view wx:if='{{warn}}' class="warn">{{warnInfo}}</view>
+
+<view class="tag">详细信息</view>
+
+<view class="mCtr">
+	<view class="mInputBox">
+		<view class="explain">面积</view>
+		<input id="area" placeholder='请填入面积(必填)' placeholder-class='mInputPH' type="number" bindfocus='focus' bindblur="mBlur" class="{{mId=='area'?'mInput S':'mInput'}}" />
+		<view class="unit">㎡</view>
+	</view>
+
+	<view class="mInputBox">
+		<view class="explain">单价</view>
+		<input id="unitPrice" placeholder='请填入单价(必填)' placeholder-class='mInputPH' type="digit" bindfocus='focus' bindblur="mBlur" class="{{mId=='unitPrice'?'mInput S':'mInput'}}" />
+		<view class="unit">元/㎡</view>
+	</view>
+
+	<view class="mInputBox">
+		<view class="explain">高度</view>
+		<picker range='{{heightList}}' value="0" bindchange="height" class="explain mPick" wx:if='{{!pickOrNot}}'>请选择高度(必选)</picker>
+		<picker range='{{heightList}}' bindchange="height" class="explain mPick BL37" wx:else>{{heightList[hIndex]}}</picker>
+		<view class="unit">米</view>
+	</view>
+
+	<view class="mInputBox">
+		<view class="explain">电压</view>
+		<input id="voltage" placeholder='请填入电压(选填)' placeholder-class='mInputPH' type="digit" bindfocus='focus' bindblur="mBlur" class="{{mId=='voltage'?'mInput S':'mInput'}}" />
+		<view class="unit">千瓦</view>
+	</view>
+
+	<view class="mInputBox" bindtap="address">
+		<view class="mInputBox">
+			<view class="explain">地址</view>
+			<view class="explain mPick" wx:if='{{!addressTitle}}'>请选择地址(必选)</view>
+			<view class="explain mPick BL37" wx:else>{{addressTitle}}</view>
+		</view>
+	</view>
+
+	<view class="mInputBox BN">
+		<view class="explain">门牌</view>
+		<input id="houseNum" placeholder='例：xx路xx号(必填)' placeholder-class='mInputPH' bindfocus='focus' bindblur="mBlur" class="{{mId=='houseNum'?'mInput S':'mInput'}}" />
+	</view>
+</view>
+
+<view class="tag">个人信息</view>
+<view class="mCtr">
+	<view class="mInputBox">
+		<view class="explain">姓名</view>
+		<input id="userName" placeholder='请填入姓名(必填)' placeholder-class='mInputPH' bindfocus='focus' bindblur="mBlur" class="{{mId=='userName'?'mInput S':'mInput'}}" />
+	</view>
+	<view class="mInputBox BN">
+		<view class="explain">电话</view>
+		<input type="number" id="phoneNum" placeholder='请填入电话(必填)' placeholder-class='mInputPH' bindfocus='focus' bindblur="mBlur" class="{{mId=='phoneNum'?'mInput S':'mInput'}}" />
+	</view>
+</view>
+
+<view class="tag">仓库标题</view>
+<view class="taCtr">
+	<textarea id="userTitle" placeholder='请填入标题(必填)' placeholder-class='mInputPH' bindfocus='focus' bindblur="mBlur" class="remarkBox {{mId=='userTitle'?'S':''}}" bindlinechange="blChange" auto-height="{{autoHeight}}" maxlength="35"></textarea>
+</view>
+
+<view class="tag">仓库备注</view>
+<view class="taCtr">
+	<textarea id="remark" placeholder='请填入备注(选填)' placeholder-class='mInputPH' bindfocus='focus' bindblur="mBlur" class="remarkBox {{mId=='remark'?'S':''}}" bindlinechange="blChange" auto-height="{{autoHeight}}" maxlength="100"></textarea>
+</view>
+
+<view class="tag">仓库图片</view>
+<view class="mCtr">
+	<view class="imgBox">
+		<view wx:for='{{TFP}}' wx:key='x'>
+			<image src='{{item}}' class='img' mode="aspectFill" />
+		</view>
+		<view class="addImg" bindtap="addImg" />
+	</view>
+</view>
+
+<view style="height:800rpx;" />
+<view bindtap="confirm" class="confirm">确认</view>

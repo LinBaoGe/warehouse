@@ -1,0 +1,36 @@
+.ctr{
+	margin-top: 20rpx;
+	margin-left: 2.5%;
+	width: 90%;
+	padding: 2.5% 2.5%;
+	background-color: white;
+	border-radius: 10rpx;
+	border: 2rpx solid #fecc2c;
+}
+
+.box{
+	margin-top: 20rpx;
+	margin-left: 2.5%;
+	width: 90%;
+	padding: 2.5% 2.5%;
+	background-color: white;
+	border-radius: 10rpx;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border: 2rpx solid #fecc2c;
+}
+
+/* .txt{
+	border-bottom: 2rpx solid gray;
+} */
+
+.copy{
+	width: 150rpx;
+	height: 70rpx;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 10rpx;
+	background-color: #fecc2c;
+}

@@ -1,0 +1,23 @@
+.swiper{
+	width: 100%;
+	height: 1350rpx;
+}
+
+movable-area {
+	height: 1350rpx;
+	width: 100%;
+	background-color: black;
+	overflow: hidden;
+}
+
+movable-view {
+	margin-top: 300rpx;
+	height: 450rpx;
+	width: 100%;
+	border: 1rpx solid black
+}
+
+.img{
+	width: 100%;
+	height:400rpx;
+}

@@ -1,0 +1,83 @@
+.searchContainer{
+  position: fixed;
+  display: flex;
+  justify-content: center;
+	align-items: center;
+  top: 0;  
+  height: 100rpx;
+  width: 100%;
+	background-color: #fec22c;
+	z-index: 1;
+}
+
+.searchIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+	width: 10%;
+	height: 70rpx;	
+	border-radius: 60rpx 0 0 60rpx;
+}
+
+.WHSearch {
+  background-color: white;
+	width: 80%;
+	height: 70rpx;
+	border-radius: 0 60rpx 60rpx 0;
+}
+
+.WHSearchPlaceholder {
+	/* margin-left: 20rpx; */
+	font-size: 27rpx;
+}
+
+.map{
+	position: fixed;
+	top: 100rpx;
+	height: 550rpx;
+	width: 100%;
+	z-index: 1;
+}
+
+.addrTxtBox{
+	position: absolute;
+	top: 650rpx;
+	width: 100%;
+}
+
+.addrBox{
+	display: flex;
+	flex-direction: column;
+  justify-content: center;
+	margin-left: 2.5%;
+	height: 150rpx;
+	width: 95%;
+	border-bottom: 2rpx solid rgba(133, 133, 133, 0.2);
+}
+
+.imgNtitle{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	height: 50rpx;
+	
+}
+
+.minilandmark{
+	width: 40rpx;
+	height: 40rpx;
+	/* border: 1rpx solid black; */
+}
+
+.title{
+	margin-left: 20rpx;
+	/* border: 1rpx solid black; */
+}
+
+.addrDetail{
+	margin-top: 20rpx;
+	margin-left: 60rpx;
+	font-size:24rpx;
+	color:#666;
+}

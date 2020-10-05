@@ -1,0 +1,272 @@
+.sNcCtr {
+	position: fixed;
+	width: 100%;
+	top: 0rpx;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100rpx;
+	background-color: #fec22c;
+	z-index: 3;
+}
+
+.sNcItem {
+	display: flex;
+	height: 70rpx;
+	width: 95%;
+}
+
+.srchCtr {
+	display: flex;
+	width: 90%;
+}
+
+.srchIcon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: white;
+	width: 10%;
+	height: 70rpx;
+	border-radius: 60rpx 0 0 60rpx;
+}
+
+.srchInput {
+	background-color: white;
+	width: 95%;
+	height: 70rpx;
+	border-radius: 0 60rpx 60rpx 0;
+}
+
+.WHSrchPH {
+	font-size: 27rpx;
+}
+
+.item {
+	display: flex;
+	height: 66rpx;
+	width: 95%;
+}
+
+.itemSon {
+	flex: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	border: 4rpx solid white;
+}
+
+.itemSonS {
+	background-color: white;
+	color: #fec22c;
+}
+
+.ttlBox {
+	display: flex;
+	position: fixed;
+	width: 100%;
+	top: 100rpx;
+	height: 98rpx;
+	border-bottom: 2rpx solid #fec22c;
+	background-color: white;
+	z-index: 3;
+}
+
+.ttlItem {
+	flex: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.ttlName{
+	text-align: right;
+	font-size: 30rpx;
+	width: 160rpx;
+	line-height: 60rpx;
+	display: -webkit-box;
+	word-break: break-all;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 1;
+}
+
+.DBArrow {
+	width: 30rpx;
+	height: 20rpx;
+	margin-left: 20rpx;
+}
+
+.table {
+	position: fixed;
+	top: 200rpx;
+	width: 100%;
+	background-color: white;
+	z-index: 2;
+}
+
+@keyframes slidown{
+	from{
+		transform: translateY(-100%);
+	}
+	to{
+		transform: translateY(0%);
+	}
+}
+
+.slidown{
+	display: block;
+	animation: slidown 0.3s ease;
+}
+
+.tableItem {
+	width: 100%;
+	height: 100rpx;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+}
+
+.cFecc2c {
+	color: #fec22c;
+}
+
+.arrowIcon {
+	width: 35rpx;
+	height: 25rpx;
+	margin-left: 10rpx;
+}
+
+.WHCtr{
+	margin-left: 2.5%;
+	margin-top: 200rpx;
+	width: 95%;	
+	border-radius: 10rpx;
+	
+}
+
+.WHItem {
+	overflow: hidden;
+	padding-left: 300rpx;
+	border-radius: 10rpx;
+	margin-top: 20rpx;
+	background-color: white;
+	/* box-shadow: gray; */
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.imgBox {
+	float: left;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: -300rpx;
+	width: 300rpx;	
+	margin-top: 10rpx;		
+}
+
+.img{
+	height: 200rpx;
+	width: 280rpx;
+	border-radius: 10rpx;
+}
+
+.txtInfo {
+	float: right;
+	width: 95%;
+	height: 220rpx;
+}
+
+.WHTitle {
+	margin-top: 10rpx;
+	width: 100%;
+	height: 100rpx;
+	display: -webkit-box;
+	word-break: break-all;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	border-radius: 0 10rpx 0 0;
+}
+
+.distance{
+	/* margin-top: 10rpx; */
+	display: flex;
+	align-items: center;
+	height: 45rpx;
+	font-size: 30rpx;
+	color: gray;
+}
+
+.areaNprice {
+	margin-top: 10rpx;
+	background-color: white;
+	width: 100%;
+	height: 60rpx;
+}
+
+.area {
+	float: left;
+	display: flex;
+	align-items: center;
+	/* line-height: 70rpx; */
+	font-size: 30rpx;
+	color: gray;
+}
+
+.height{
+	display: flex;
+	align-items: center;
+	float: left;
+	/* line-height: 70rpx; */
+	font-size: 30rpx;
+	margin-left: 20rpx;
+	color: gray;
+}
+
+.price {
+	display: flex;
+	align-items: center;
+	float: right;
+	/* line-height: 70rpx; */
+	margin-right: 20rpx;
+	color: red;
+}
+
+.sellIconBox {
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	bottom: 20rpx;
+	right: 2.5%;
+	height: 150rpx;
+	width: 150rpx;
+	border-radius: 20rpx;
+	border: 10rpx solid #fec22c;
+	background-color: #ffffff;
+}
+
+.sellIcon {
+	width: 120rpx;
+	height: 120rpx;
+}
+
+.sellIconTxt {
+	margin-top: 5rpx;
+	font-size: 27rpx;
+}
+
+.sMask{
+	position: fixed;
+	top: 200rpx;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(133, 133, 133, 0.8);
+}

@@ -1,0 +1,168 @@
+page {
+	background-color: rgba(133, 133, 133, 0.2);
+	margin-left: 2.5%;
+}
+
+.warn{
+	background-color: red;
+	position: fixed;
+	top: 0;
+	margin-left: -2.5%;
+	width: 100%;
+	text-align: center;
+	line-height: 70rpx;
+	z-index: 1;
+}
+
+.mCtr {
+	width: 90%;
+	background-color: white;
+	padding: 2.5% 2.5%;
+	border-radius: 0 10rpx 10rpx 10rpx;
+}
+
+.mInputBox {
+	width: 100%;
+	background-color: white;
+	height: 100rpx;
+	border-bottom: 2rpx solid rgba(133, 133, 133, 0.2);
+}
+
+.BN {
+	border-bottom: none;
+}
+
+.explain {
+	float: left;
+	line-height: 100rpx;
+}
+
+.mInput {
+	float: left;
+	margin-left: 20rpx;
+	margin-top: 20rpx;
+	height: 60rpx;
+}
+
+.S{
+	border: 5rpx solid orange;
+	border-radius: 10rpx;
+	box-shadow: 0 0 5rpx #888888;
+}
+
+.mInputPH {
+	font-size: 30rpx;
+}
+
+.mPick{
+	margin-left: 20rpx;
+	font-size: 30rpx;
+	color: gray;
+	width: 450rpx;
+}
+
+.BL37{
+	color: black;
+	font-size: 37rpx;
+	/* text-align: center; */
+}
+
+.PN{
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0;
+}
+
+.tag{
+	background-color: white;
+	font-weight: bold;
+	margin-top: 20rpx;
+	line-height: 70rpx;
+	font-size: 30rpx;	
+	width: 21%;
+	clip-path: polygon(0% 0%,80% 0%, 100% 100%, 0% 100%);
+	padding-left: 20rpx;
+	border-radius: 10rpx 10rpx 0 0;
+}
+
+.BTLR0{
+	border-top-left-radius: 0;
+}
+
+.MGT0{
+	margin-top: 0;
+}
+
+.taCtr{
+	width: 90%;
+	padding: 2.5% 2.5%;
+	background-color: white;
+	border-radius: 0 10rpx 10rpx 10rpx;
+}
+
+.remarkBox{
+	width: 95%;
+	padding: 2.5% 2.5%;
+	height: 100rpx;
+}
+
+.imgBox{
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	background-color: white;
+}
+
+.img{
+	width: 205rpx;
+	height: 205rpx;
+	background-color: red;
+	margin: 10rpx;
+}
+
+.addImg{
+	position: relative;
+	width: 205rpx;
+	height: 205rpx;
+	background-color: rgba(133, 133, 133, 0.2);
+	margin: 10rpx;
+}
+
+.addImg::before{
+	position: absolute;
+	content: '';
+	bottom: 30%;
+	height: 40%;
+	left: 47%;
+	width: 6%;
+	background-color: white;
+}
+
+.addImg::after{
+	position: absolute;
+	content: '';
+	width: 40%;
+	left: 30%;
+	bottom: 47%;
+	height: 6%;
+	background-color: white;
+}
+
+.unit {
+	float: right;
+	line-height: 100rpx;
+}
+
+.confirm {
+	text-align: center;
+	background-color: #fec22c;
+	position: fixed;
+	bottom: 20rpx;
+	width: 95%;
+	height: 100rpx;
+	border-radius: 60rpx;
+	line-height: 100rpx;
+	font-size: 40rpx;
+	box-shadow: 0 0 20rpx #888888;
+	z-index: 2;
+}

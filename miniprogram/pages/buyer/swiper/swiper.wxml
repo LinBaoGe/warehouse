@@ -1,0 +1,11 @@
+<swiper circular class="swiper" current="{{current}}">
+	<view wx:for='{{tempList}}' wx:key='x'>
+		<swiper-item>
+			<movable-area scale-area>
+				<movable-view direction='horizontal' scale-min="1" scale-max="2" scale animation out-of-bounds scale-value='1'>
+					<image src='{{item.tempFileURL}}' mode="widthFix" class="img" />
+				</movable-view>
+			</movable-area>
+		</swiper-item>
+	</view>
+</swiper>

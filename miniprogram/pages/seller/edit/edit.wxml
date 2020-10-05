@@ -1,0 +1,87 @@
+<view wx:if='{{warn}}' class="warn">{{warnInfo}}</view>
+
+<view class="tag">详细信息</view>
+<view class="mCtr">
+	<view class="mInputBox">
+		<view class="explain">标题</view>
+		<input id="userTitle" value="{{dList.userTitle}}" placeholder='请填入标题(必填)' placeholder-class='mInputPH' bindfocus='focus' bindblur="mBlur" class="{{mId=='userTitle'?'mInput S':'mInput'}}" />
+	</view>
+	<view class="mInputBox">
+		<view class="explain">面积</view>
+		<input id="area" value="{{dList.area}}" placeholder='请输入面积(必填)' placeholder-class='mInputPH' type="number" bindfocus='focus' bindblur="mBlur" class="{{mId=='area'?'mInput S':'mInput'}}" />
+		<view class="unit">㎡</view>
+	</view>
+
+	<view class="mInputBox">
+		<view class="explain">单价</view>
+		<input id="unitPrice" value="{{dList.unitPrice}}" placeholder='请输入单价(必填)' placeholder-class='mInputPH' type="digit" bindfocus='focus' bindblur="mBlur" class="{{mId=='2'?'mInput S':'mInput'}}" />
+		<view class="unit">元/㎡</view>
+	</view>
+
+	<view class="mInputBox">
+		<view class="explain">高度</view>
+		<picker range='{{heightList}}' value="0" bindchange="height" class="explain mPick" wx:if='{{!hIndex}}'>请选择高度(必选)</picker>
+		<picker range='{{heightList}}' value="{{hIndex}}" bindchange="height" class="explain mPick BL37" wx:else>{{heightList[hIndex]}}</picker>
+		<view class="unit">米</view>
+	</view>
+
+	<view class="mInputBox">
+		<view class="explain">电压</view>
+		<input id="voltage" value="{{dList.voltage}}" placeholder='请输入电压(选填)' placeholder-class='mInputPH' type="digit" bindfocus='focus' bindblur="mBlur" class="{{mId=='voltage'?'mInput S':'mInput'}}" />
+		<view class="unit">千瓦</view>
+	</view>
+
+	<view class="mInputBox" bindtap="address">
+		<view class="mInputBox">
+			<view class="explain">地址</view>
+			<view class="explain mPick" wx:if='{{!dList.addressTitle}}'>请选择地址(必选)</view>
+			<view class="explain mPick BL37" wx:else>{{dList.addressTitle}}</view>
+		</view>
+	</view>
+
+	<view class="mInputBox BN">
+		<view class="explain">门牌</view>
+		<input id="houseNum" value="{{dList.houseNum}}" placeholder='例：xx路xx号(必填)' placeholder-class='mInputPH' bindfocus='focus' bindblur="mBlur" class="{{mId=='houseNum'?'mInput S':'mInput'}}" />
+	</view>
+</view>
+
+<view class="tag">个人信息</view>
+<view class="mCtr">
+	<view class="mInputBox">
+		<view class="explain">姓名</view>
+		<input id="userName" value="{{dList.userName}}" placeholder='请输入姓名(必填)' placeholder-class='mInputPH' bindfocus='focus' bindblur="mBlur" class="{{mId=='userName'?'mInput S':'mInput'}}" />
+	</view>
+	<view class="mInputBox BN">
+		<view class="explain">电话</view>
+		<input id="phoneNum" value="{{dList.phoneNum}}" placeholder='请填入电话(必填)' placeholder-class='mInputPH' bindfocus='focus' bindblur="mBlur" class="{{mId=='phoneNum'?'mInput S':'mInput'}}" />
+	</view>
+</view>
+
+<!-- <view class="tag">仓库备注</view>
+<view class="taCtr">
+		<textarea id="remark" value="{{dList.remark}}" placeholder='请填入备注(选填)' placeholder-class='mInputPH' bindfocus='focus' bindblur="mBlur" class="{{mId=='remark'?'remarkBox S':'mInput'}}" bindlinechange="blChange" auto-height="{{autoHeight}}"></textarea>
+</view> -->
+
+<view class="tag">仓库标题</view>
+<view class="taCtr">
+	<textarea id="userTitle" placeholder='请填入标题(必填)' placeholder-class='mInputPH' bindfocus='focus' bindblur="mBlur" class="remarkBox {{mId=='userTitle'?'S':''}}" bindlinechange="blChange" auto-height="{{autoHeight}}" maxlength="35"></textarea>
+</view>
+
+<view class="tag">仓库备注</view>
+<view class="taCtr">
+	<textarea id="remark" placeholder='请填入备注(选填)' placeholder-class='mInputPH' bindfocus='focus' bindblur="mBlur" class="remarkBox {{mId=='remark'?'S':''}}" bindlinechange="blChange" auto-height="{{autoHeight}}" maxlength="100"></textarea>
+</view>
+
+
+<view class="tag">仓库图片</view>
+<view class="mCtr">
+	<view class="imgBox">
+		<view wx:for='{{imgList}}' wx:key='x'>
+			<image src='{{item}}' class='img' mode="aspectFill" bindtap="delImg" data-index="{{index}}" />
+		</view>
+		<view class="addImg" bindtap="addImg" />
+	</view>
+</view>
+
+<view style="height:300rpx;" />
+<view bindtap="confirm" class="confirm">确认</view>

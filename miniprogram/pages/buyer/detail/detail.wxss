@@ -1,0 +1,153 @@
+page{
+	margin-left: 2.5%;
+	background-color: rgba(133, 133, 133, 0.2);
+}
+
+.imgList{
+	width: 100%;
+	height: 400rpx;
+}
+
+.imgItem{
+	width: 100%;
+}
+
+.img{
+	width: 95%;
+	height: 500rpx;
+	border-radius: 10rpx;
+}
+
+.mainInfo{
+	display: flex;	
+	background-color: white;	
+	width: 95%;
+	height: 150rpx;
+	/* margin-top: 20rpx;	 */
+	border-bottom: 2rpx solid rgba(133, 133, 133, 0.7);
+	border-bottom-left-radius: 10rpx;
+	border-bottom-right-radius: 10rpx;
+}
+
+.mainInfoItem{
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: white;
+	border-radius: 0 0 10rpx 10rpx;
+}
+
+.mainInfoTxt{
+	margin-top: 20rpx;
+}
+
+.mainInfoPriceTxt{
+	color: red;
+}
+
+.ctr{
+	margin-top: 20rpx;
+	/* margin-left: 2.5%; */
+	width: 90%;
+	padding: 2.5% 2.5%;
+	border-radius: 10rpx;
+	background-color: white;
+}
+
+.box{	
+	float: left;
+	display: flex;
+	width:50%;
+	line-height: 100rpx;
+}
+
+.explain{
+	color: gray;
+}
+
+.subTxt{
+	margin-left: 20rpx;
+}
+
+.remark{
+	color: gray;
+}
+
+.mapTagBox{
+	display: flex;
+	align-items: center;
+	background-color: white;
+	width: 90%;
+	padding: 2.5% 2.5%;
+	height: 50rpx;
+	margin-top: 20rpx;
+	border-radius: 10rpx 10rpx 0 0;
+}
+
+.mapTagIcon{
+	width:40rpx;
+	height: 40rpx;
+	background-color: white;
+}
+
+.mapTag{
+	background-color: white;
+	margin-left: 20rpx;
+	border-radius: 0 10rpx 0 0;
+	font-size: 30rpx;
+	font-weight: bold;
+}
+
+.map{
+	width: 95%;
+	height: 400rpx;
+	border-radius: 0 0 10rpx 10rpx;
+}
+
+.phoneCtr{
+	position: fixed;
+	z-index: 2;
+	bottom: 0;
+}
+
+.phoneCtr{
+	position: fixed;
+	z-index: 2;
+	bottom: 0rpx;
+	left: -2.5%;
+	height: 100rpx;
+	width: 102.5%;
+	border-top: 2rpx solid gray;
+	padding: 20rpx 0;
+	background-color: white;
+}
+
+.phoneBox {
+	float: right;
+	background-color: #fec22c;
+	border-radius: 10rpx;
+	width: 250rpx;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 2.5% 2.5%;
+	margin-right: 20rpx;
+}
+
+.phoneIcon {
+	width: 50rpx;
+	height: 50rpx;
+	margin-right: 20rpx;
+}
+
+.phoneBtn{
+	position: fixed;
+	bottom: 20rpx;
+	width: 290rpx;
+	height: 90rpx;
+	background-color: red;
+	opacity: 0;
+	z-index: 3;
+}

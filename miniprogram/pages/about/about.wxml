@@ -1,0 +1,11 @@
+<view class='ctr'>亲爱的用户，您好！仓库通致力于帮助仓库的买卖双方快速达成交易，减少空库率。为市场提供真实且便捷的仓库信息。任何问题均可通过如下方式联系我们。</view>
+
+<view bindtap="clip" id="13138237201" class="box">
+	<view class="txt">电话：13138237201</view>
+	<view class="copy">复制</view>
+</view>
+
+<view bindtap="clip" id="ozh5201" class="box">
+	<view class="txt">微信：ozh5201</view>
+	<view class="copy">复制</view>
+</view>

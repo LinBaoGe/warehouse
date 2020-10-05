@@ -1,0 +1,48 @@
+{
+	"pages": [
+		"pages/buyer/first/first",
+		"pages/buyer/detail/detail",
+		"pages/buyer/me/me",
+		"pages/buyer/swiper/swiper",
+
+		"pages/seller/add/add",
+		"pages/seller/his/his",
+		"pages/seller/edit/edit",
+		"pages/seller/address/address",
+
+		"pages/about/about"
+	],
+	
+	"permission":{
+		"scope.userLocation":{
+			"desc":"你的位置信息将用于查找附近的仓库"
+		}
+	},
+
+	"window": {
+		"backgroundColor": "#F6F6F6",
+		"backgroundTextStyle": "light",
+		"navigationBarBackgroundColor": "#F6F6F6",
+		"navigationBarTitleText": "云开发 QuickStart",
+		"navigationBarTextStyle": "black"
+	},
+
+	"tabBar": {
+		"list": [{
+				"pagePath": "pages/buyer/first/first",
+				"text": "首页",
+				"iconPath": "pages/img/first.png",
+				"selectedIconPath": "pages/img/firstS.png"
+			},
+			{
+				"pagePath": "pages/buyer/me/me",
+				"text": "我",
+				"iconPath": "pages/img/me.png",
+				"selectedIconPath": "pages/img/meS.png"
+			}
+		]
+	},
+	
+	"sitemapLocation": "sitemap.json",
+	"style": "v2"
+}

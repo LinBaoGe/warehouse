@@ -1,0 +1,17 @@
+<view class="WHCtr">
+	<view wx:for='{{list}}' wx:key='x' class="WHItem" bindtap="WHItem" data-index="{{index}}">
+		<view class="imgBox">
+			<image src='{{item.img}}' class="img" mode="aspectFill" />
+		</view>
+		<view class="txtInfo">
+			<view class="WHTitle">{{item.userTitle}}</view>
+			<view class="distance"></view>
+			<!-- 此处不需要距离，只需要其盒子的高度 -->
+			<view class="areaNprice">
+				<view class="area">{{item.area}}㎡</view>
+				<view class="height">高{{item.height}}米</view>
+				<view class="price">{{item.unitPrice}}元/㎡</view>
+			</view>
+		</view>
+	</view>
+</view>

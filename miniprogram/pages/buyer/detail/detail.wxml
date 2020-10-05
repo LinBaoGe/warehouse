@@ -1,0 +1,67 @@
+<swiper indicator-dots autoplay circular class='imgList' bindchange="bChange">
+	<view wx:for='{{imgList}}' wx:key='x'>
+		<swiper-item>
+			<image src='{{item}}' class="img" bindtap="img" />
+		</swiper-item>
+	</view>
+</swiper>
+
+<view class="mainInfo">
+	<view class="mainInfoItem">
+		<view class="mainInfoTag">面积</view>
+		<view class="mainInfoTxt">{{area}}㎡</view>
+	</view>
+	<view class="mainInfoItem">
+		<view class="mainInfoTag">高度</view>
+		<view class="mainInfoTxt">{{height}}米</view>
+	</view>
+	<view class="mainInfoItem">
+		<view class="mainInfoTag">价格</view>
+		<view class="mainInfoTxt mainInfoPriceTxt">{{unitPrice}}元/㎡</view>
+	</view>
+</view>
+
+<view class="ctr">{{userTitle}}</view>
+
+<view class="ctr">
+	<view class="box">
+		<view class="explain">电压</view>
+		<view class="subTxt">{{voltage}}千瓦</view>
+	</view>
+	<view class="box" wx:if='{{constrcut}}'>
+		<view class="explain">结构</view>
+		<view class="subTxt">{{constrcut}}</view>
+	</view>
+	<view class="box">
+		<view class="explain">顶层</view>
+		<view class="subTxt">瓦顶</view>
+	</view>
+</view>
+
+<view class="ctr" wx:if='{{remark}}'>
+	<view class="remark">{{remark}}</view>
+</view>
+
+<view class="mapTagBox">
+	<image src="landmark.png" class="mapTagIcon" />
+	<view class="mapTag">仓库位置</view>
+</view>
+<map class="map" longitude="{{WHLon}}" latitude="{{WHLat}}" markers="{{markers}}" enable-zoom enable-scroll />
+
+<view style="height:200rpx"></view>
+
+<view class="phoneCtr">
+	<!-- <view class="phoneBox" bindtap='phoneCall'>
+		<image src="share.png" class="phoneIcon"></image>
+		<button open-type="share"></button>
+	</view> -->
+	<view class="phoneBox" bindtap='phoneCall'>
+		<image src="phoneIcon.png" class="phoneIcon"></image>
+		电话咨询
+	</view>
+	<view class="phoneBox">
+		<button class="phoneBtn" open-type="share"></button>
+		<image src="share.png" class="phoneIcon"></image>
+		转发好友
+	</view>
+</view>
